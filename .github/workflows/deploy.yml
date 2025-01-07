@@ -20,4 +20,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION_ID }}
       
       - name: Sync files to S3
-        run: aws s3 sync 1_2\basic_html s3://murat.github.rocks/ --delete
+        run: aws s3 sync ./1_2/basic_html s3://murat.github.rocks/ --delete
